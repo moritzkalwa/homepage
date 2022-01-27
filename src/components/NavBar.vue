@@ -1,20 +1,20 @@
 <script lang="ts">
-import { computed, defineComponent, inject, Ref } from "vue"
-import { useRoute } from "vue-router"
+import { computed, defineComponent, inject, Ref } from "vue";
+import { useRoute } from "vue-router";
 
 export default defineComponent({
-  components: {  },
+  components: {},
   setup() {
-    const route = useRoute()
+    const route = useRoute();
     const routeDisplay = computed(() => {
-      if (route.name === "home") return `test`
-      return "test"
-    })
+      if (route.name === "home") return `test`;
+      return "test";
+    });
     return {
       routeDisplay,
-    }
+    };
   },
-})
+});
 </script>
 
 <template>
@@ -25,7 +25,6 @@ export default defineComponent({
     <div class="flex h-full items-center"></div>
   </nav>
 </template>
-
 
 <style lang="scss" scoped>
 .nav {

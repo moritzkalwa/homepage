@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Pong from "@/components/Pong.vue"
+import Pong from "@/components/PongGame.vue";
 </script>
 
 <template>
@@ -12,7 +12,7 @@ import Pong from "@/components/Pong.vue"
 <style lang="scss">
 main {
   text-align: center;
-  &>* {
+  & > * {
     margin-top: 5vh;
   }
 }

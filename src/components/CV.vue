@@ -1,58 +1,53 @@
 <script lang="ts">
-import { computed, defineComponent, inject, Ref } from "vue"
-import { useRoute } from "vue-router"
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  components: {  },
+  components: {},
   setup() {
-    return {
-    }
+    return {};
   },
-})
+});
 </script>
 
 <template>
-    <div class="timeline">
-        <div class="container left">
-            <div class="date" style="right: -250px;">Octobre 2017 -  February 2019</div>
-                <div class="content">
-                <h2>Heinrich-Heine-Universität</h2>
-                <p>
-                    In Octobre of 2017 I started studying phsysics part time at Heinrich-Heine-Universität.
-                </p>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="date" style="left: -90px;">June 2020</div>
-                <div class="content">
-                <h2>Abitur</h2>
-                <p>
-                    I finished school in June of 2020 with a final grade of 1.1
-                </p>
-            </div>
-        </div>
-        <div class="container left">
-            <div class="date" style="right: -130px;">Oktobre 2020 -</div>
-                <div class="content">
-                <h2>RWTH-Aachen</h2>
-                <p>
-                    I started studying full time at RWTH-Aachen.
-                </p>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="date" style="left: -140px;">Decembre 2021 -</div>
-                <div class="content">
-                <h2>Vue</h2>
-                <p>
-                    Started using Vue and helping with <a href="https://staging.resync.tv/">resync</a>. 
-                    Shoutouts <a href="https://vaaski.dev/">@vaaski</a>.
-                </p>
-            </div>
-        </div>
+  <div class="timeline">
+    <div class="container left">
+      <div class="date" style="right: -250px">Octobre 2017 - February 2019</div>
+      <div class="content">
+        <h2>Heinrich-Heine-Universität</h2>
+        <p>
+          In Octobre of 2017 I started studying phsysics part time at
+          Heinrich-Heine-Universität.
+        </p>
+      </div>
     </div>
+    <div class="container right">
+      <div class="date" style="left: -90px">June 2020</div>
+      <div class="content">
+        <h2>Abitur</h2>
+        <p>I finished school in June of 2020 with a final grade of 1.1</p>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="date" style="right: -130px">Oktobre 2020 -</div>
+      <div class="content">
+        <h2>RWTH-Aachen</h2>
+        <p>I started studying physics full time at RWTH-Aachen.</p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="date" style="left: -140px">Decembre 2021 -</div>
+      <div class="content">
+        <h2>Vue</h2>
+        <p>
+          Started using Vue and helping with
+          <a href="https://staging.resync.tv/">resync</a>. Shoutouts
+          <a href="https://vaaski.dev/">@vaaski</a>.
+        </p>
+      </div>
+    </div>
+  </div>
 </template>
-
 
 <style lang="scss" scoped>
 *,
@@ -75,10 +70,10 @@ body {
 }
 
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
-  background: #006E51;
+  background: #006e51;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -101,14 +96,14 @@ body {
 }
 
 .container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 16px;
   height: 16px;
   top: calc(50% - 8px);
   right: -8px;
   background: #ffffff;
-  border: 2px solid #006E51;
+  border: 2px solid #006e51;
   border-radius: 16px;
   z-index: 1;
 }
@@ -118,13 +113,13 @@ body {
 }
 
 .container::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 50px;
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
-  background: #006E51;
+  background: #006e51;
   z-index: 1;
 }
 
@@ -155,7 +150,7 @@ body {
 
 .container .content {
   padding: 30px 90px 30px 30px;
-  background: #006E51;
+  background: #006e51;
   position: relative;
   border-radius: 0 500px 500px 0;
 }
@@ -194,7 +189,7 @@ body {
     left: 0%;
   }
 
-  .container.left::after, 
+  .container.left::after,
   .container.right::after {
     left: 82px;
   }
@@ -202,12 +197,12 @@ body {
   .container.left::before,
   .container.right::before {
     left: 100px;
-    border-color: transparent #006E51 transparent transparent;
+    border-color: transparent #006e51 transparent transparent;
   }
 
   .container.left .date,
   .container.right .date {
-      display: none;
+    display: none;
   }
 
   .container.left .content,
