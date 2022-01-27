@@ -23,11 +23,11 @@ export default defineComponent({
             </div>
         </div>
         <div class="container right">
-            <div class="date" style="left: -90px;">Juny 2020</div>
+            <div class="date" style="left: -90px;">June 2020</div>
                 <div class="content">
                 <h2>Abitur</h2>
                 <p>
-                    I finished school in Juny of 2020 with a final grade of 1.1
+                    I finished school in June of 2020 with a final grade of 1.1
                 </p>
             </div>
         </div>
