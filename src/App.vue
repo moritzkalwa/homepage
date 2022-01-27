@@ -13,6 +13,7 @@ import BottomFade from "@/components/BottomFade.vue"
         <RouterLink class="route" to="/">Home</RouterLink>
         <a href="/resume.pdf" class="route" hidden>Resume</a>
         <a href="https://github.com/moritzkalwa" class="route">Github</a>
+        <a href="https://discordapp.com/users/190487569362845696" class="route">Discord</a>
         <RouterLink class="route" to="/pong">Pong</RouterLink>
       </nav>
 
