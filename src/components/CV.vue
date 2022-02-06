@@ -46,6 +46,13 @@ export default defineComponent({
         </p>
       </div>
     </div>
+    <div class="container left">
+      <div class="date" style="right: -140px">February 2022 -</div>
+      <div class="content">
+        <h2>Nuntium</h2>
+        <p>Started work on <a href="https://nuntium.moritzkalwa.dev/">Nuntium</a>, a blockchain based news and content site.</p>
+      </div>
+    </div>
   </div>
 </template>
 
