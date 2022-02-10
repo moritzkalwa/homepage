@@ -61,7 +61,7 @@ export default defineComponent({
   }
   &.moving {
     position: relative;
-    background-color: var(--color-background);
+    background-color: transparent;
     cursor: pointer;
     animation: moving 6s forwards linear;
     &:before {
@@ -141,7 +141,7 @@ export default defineComponent({
     cursor: default;
   }
   to {
-    background-color: var(--color-background);
+    background-color: transparent;
     cursor: pointer;
   }
 }
