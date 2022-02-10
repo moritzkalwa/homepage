@@ -32,6 +32,7 @@ body {
   background-color: var(--color-background);
   background-size: 75px;
   background-repeat: repeat;
+  background-attachment: fixed;
   width: 100vw;
   &::-webkit-scrollbar {
     display: none;
