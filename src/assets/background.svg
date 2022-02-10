@@ -1,0 +1,12 @@
+<svg id="svg1" viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg">
+    <path stroke="black" stroke-width="10" stroke-linecap="round" fill="transparent" stroke-linejoin="round" d="M150,50 
+            C0,150 
+            300,150 
+            150,250">
+    </path>
+    <path stroke="black" stroke-width="10" stroke-linecap="round" fill="transparent" stroke-linejoin="round" d="M450,200 
+            C300,300 
+            600,300 
+            450,400">
+    </path>
+</svg>

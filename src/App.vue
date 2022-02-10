@@ -9,7 +9,7 @@ import BottomFade from "@/components/BottomFade.vue";
     <div class="nav-wrapper">
       <Logo />
       <nav>
-        <RouterLink class="route" to="/">Home</RouterLink>
+        <a href="#contact" class="route" v-smooth-scroll hidden>Contact</a>
         <a href="/resume.pdf" class="route" hidden>Resume</a>
         <a href="https://github.com/moritzkalwa" class="route">Github</a>
         <a href="https://discordapp.com/users/190487569362845696" class="route"
@@ -27,6 +27,9 @@ import BottomFade from "@/components/BottomFade.vue";
 @import "@/assets/base.scss";
 body {
   background-color: var(--color-background);
+  background-image: url("/src/assets/background.svg");
+  background-size: 75px;
+  background-repeat: repeat;
   width: 100vw;
   &::-webkit-scrollbar {
     display: none;

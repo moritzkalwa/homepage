@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import CV from "@/components/CV.vue";
+import ContactForm from "@/components/ContactForm.vue";
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import CV from "@/components/CV.vue";
     </h1>
     <h2>My passion is turning ideas into reality.</h2>
     <CV />
+    <ContactForm id="contact" />
   </main>
 </template>
 
