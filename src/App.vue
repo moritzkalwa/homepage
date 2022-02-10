@@ -15,6 +15,8 @@ import BottomFade from "@/components/BottomFade.vue";
         <a href="https://discordapp.com/users/190487569362845696" class="route"
           >Discord</a
         >
+        <a href="https://nuntium.moritzkalwa.dev/" class="route">Nuntium</a>
+        <a href="https://staging.resync.tv/" class="route">resync</a>
       </nav>
     </div>
   </div>
