@@ -7,7 +7,6 @@ export default defineComponent({
     const findScroll = (e?: Event) => {
       let documentHeight = document.body.scrollHeight;
       let currentScroll = window.scrollY + window.innerHeight;
-      // When the user is [modifier]px from the bottom, fire the event.
       let modifier = 100;
       return Math.max(
         Math.min(-(currentScroll - documentHeight) / modifier, 1.0),

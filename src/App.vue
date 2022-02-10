@@ -9,13 +9,14 @@ import BottomFade from "@/components/BottomFade.vue";
     <div class="nav-wrapper">
       <Logo />
       <nav>
-        <a href="#contact" class="route" v-smooth-scroll hidden>Contact</a>
-        <a href="/resume.pdf" class="route" hidden>Resume</a>
         <a href="https://github.com/moritzkalwa" class="route">Github</a>
+        <div class="spacer"></div>
         <a href="https://discordapp.com/users/190487569362845696" class="route"
           >Discord</a
         >
+        <div class="spacer"></div>
         <a href="https://nuntium.moritzkalwa.dev/" class="route">Nuntium</a>
+        <div class="spacer"></div>
         <a href="https://staging.resync.tv/" class="route">resync</a>
       </nav>
     </div>
@@ -59,26 +60,33 @@ body {
 }
 
 .nav-wrapper {
-  margin-bottom: 5px;
+  margin-top: auto;
   display: flex;
   background-color: var(--color-background-alternate);
 }
 
 nav {
+  display: flex;
   font-size: large;
   margin-left: auto;
   margin-right: 5vw;
-  display: flexbox;
   margin-top: auto;
+  margin-bottom: auto;
   padding: 10px;
   border-radius: 10px;
   background-color: var(--color-background);
-  & > * {
+  & > a {
     text-align: center;
+  }
+  & > .spacer {
+    background-color: var(--color-background-alternate);
+    width: 1px;
+    border-radius: 10%;
   }
 }
 
 .route {
+  min-width: 5vw;
   padding: 5px;
   text-decoration: none;
   &:link {

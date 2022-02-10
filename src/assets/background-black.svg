@@ -1,4 +1,4 @@
-<svg id="bg-svg" stroke="black" stroke-width="10" stroke-linecap="round" fill="transparent" stroke-linejoin="round" viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg">
+<svg style="filter: blur(0.5px); -webkit-filter: blur(0.5px);" id="bg-svg" stroke="black" stroke-width="10" stroke-linecap="round" fill="transparent" stroke-linejoin="round" viewBox="0 0 600 450" xmlns="http://www.w3.org/2000/svg">
     <path d="M150,50 
             C0,150 
             300,150 

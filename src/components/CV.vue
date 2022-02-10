@@ -12,11 +12,11 @@ export default defineComponent({
 <template>
   <div class="timeline">
     <div class="container left">
-      <div class="date" style="right: -250px">Octobre 2017 - February 2019</div>
+      <div class="date" style="right: -250px">October 2017 - February 2019</div>
       <div class="content">
-        <h2>Heinrich-Heine-Universität</h2>
+        <h2 class="desktop">Heinrich-Heine-Universität</h2><h2 class="mobile">Heinrich-Heine-Universität: <br>October 2017 - February 2019</h2>
         <p>
-          In Octobre of 2017 I started studying phsysics part time at
+          In October of 2017 I started studying phsysics part time at
           Heinrich-Heine-Universität.
         </p>
       </div>
@@ -24,22 +24,22 @@ export default defineComponent({
     <div class="container right">
       <div class="date" style="left: -90px">June 2020</div>
       <div class="content">
-        <h2>Abitur</h2>
-        <p>I finished school in June of 2020 with a final grade of 1.1</p>
+        <h2 class="desktop">Abitur</h2><h2 class="mobile">Abitur: <br>June 2020</h2>
+        <p>Graduated school with a final grade of 1.1</p>
       </div>
     </div>
     <div class="container left">
-      <div class="date" style="right: -130px">Oktobre 2020 -</div>
+      <div class="date" style="right: -200px">October 2020 - present</div>
       <div class="content">
-        <h2>RWTH-Aachen</h2>
+        <h2 class="desktop">RWTH-Aachen</h2><h2 class="mobile">RWTH-Aachen: <br>October 2020 - present</h2>
         <p>I started studying physics full time at RWTH-Aachen.</p>
       </div>
     </div>
     <div class="container right">
-      <div class="date" style="left: -140px">Decembre 2021 -</div>
+      <div class="date" style="left: -210px">December 2021 - present</div>
       <div class="content">
-        <h2>Vue</h2>
-        <p>
+        <h2 class="desktop">Vue</h2><h2 class="mobile">Vue: <br>December 2021 - present</h2>
+        <p> 
           Started using Vue and helping with
           <a href="https://staging.resync.tv/">resync</a>. Shoutouts
           <a href="https://vaaski.dev/">@vaaski</a>.
@@ -47,9 +47,9 @@ export default defineComponent({
       </div>
     </div>
     <div class="container left">
-      <div class="date" style="right: -140px">February 2022 -</div>
+      <div class="date" style="right: -210px">February 2022 - present</div>
       <div class="content">
-        <h2>Nuntium</h2>
+        <h2 class="desktop">Nuntium</h2><h2 class="mobile">Nuntium: <br>February 2022 - present</h2>
         <p>Started work on <a href="https://nuntium.moritzkalwa.dev/">Nuntium</a>, a blockchain based news and content site.</p>
       </div>
     </div>
@@ -65,6 +65,10 @@ export default defineComponent({
 
 body {
   background: --var(--color-background);
+}
+
+h2 {
+  font-weight: 500!important;
 }
 
 .timeline {
@@ -178,7 +182,17 @@ body {
   line-height: 22px;
 }
 
-@media (max-width: 767.98px) {
+.mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
   .timeline::after {
     left: 90px;
   }
