@@ -15,6 +15,8 @@ import BottomFade from "@/components/BottomFade.vue";
           >Discord</a
         >
         <div class="spacer"></div>
+        <a href="#contact" class="route" v-smooth-scroll>Contact</a>
+        <div class="spacer"></div>
         <a href="https://nuntium.moritzkalwa.dev/" class="route">Nuntium</a>
         <div class="spacer"></div>
         <a href="https://staging.resync.tv/" class="route">resync</a>
@@ -68,12 +70,13 @@ body {
 
 nav {
   display: flex;
-  font-size: large;
+  flex-wrap: wrap;
+  font-size: larger;
   margin-left: auto;
   margin-right: 5vw;
   margin-top: auto;
   margin-bottom: auto;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
   -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25); 
   box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25);
@@ -89,8 +92,7 @@ nav {
 }
 
 .route {
-  min-width: 5vw;
-  padding: 5px;
+  padding: 7px;
   text-decoration: none;
   &:link {
     text-decoration: none;

@@ -1,5 +1,5 @@
 <script lang="ts">
-import { defineComponent, reactive, ref } from "vue"
+import { defineComponent, reactive, ref, computed } from "vue"
 import { RouterLink } from "vue-router"
 const messageDest = "/.netlify/functions/message"
 const emailReg = /[A-Z0-9._%+-]+@[A-Z0-9-]+.[A-Z]{2,4}/gim
@@ -53,6 +53,19 @@ export default defineComponent({
         submit()
       }
     }
+
+    const nameValid = computed(() => {
+      return (!form.email && !form.message) || form.name
+    })
+
+    const messageValid = computed(() => {
+      return (!form.email && !form.name) || form.message  
+    })
+
+    const emailValid = computed(() => {
+      return (!form.message && !form.name) || form.email  
+    })
+
     return {
       RouterLink,
       submit,
@@ -60,13 +73,16 @@ export default defineComponent({
       form,
       valid,
       success,
+      nameValid,
+      messageValid,
+      emailValid
     }
   },
 })
 </script>
 
 <template>
-  <div class="contact-wrapper">
+  <div class="contact-wrapper" id="contact">
     <TransitionGroup name="fade">
       <section v-if="success === null" class="contact-form-wrapper">
         <h1 >contact me</h1>
@@ -85,7 +101,7 @@ export default defineComponent({
             spellcheck="false"
             class="input"
             style="width: max(150px, 30vw)"
-            :class="{ invalid: !valid.name }"
+            :class="{ invalid: !nameValid }"
           />
           <input
             v-model="form.email"
@@ -97,7 +113,7 @@ export default defineComponent({
             spellcheck="false"
             class="input"
             style="width: max(150px, 30vw)"
-            :class="{ invalid: !valid.email }"
+            :class="{ invalid: !emailValid }"
           />
           <textarea
             v-model="form.message"
@@ -109,7 +125,7 @@ export default defineComponent({
             autocomplete="off"
             class="input textarea"
             style="width: max(150px, 30vw)"
-            :class="{ invalid: !valid.message }"
+            :class="{ invalid: !messageValid }"
           />
 
           <button type="submit">submit</button>
@@ -175,6 +191,10 @@ export default defineComponent({
       min-height: 15vh;
       text-align: left;
       padding: 10px;
+    }
+    &:invalid, &.invalid {
+      border-style: solid;
+      border-color: red;
     }
   }
   button {
