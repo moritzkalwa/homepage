@@ -27,7 +27,6 @@ import BottomFade from "@/components/BottomFade.vue";
 @import "@/assets/base.scss";
 body {
   background-color: var(--color-background);
-  background-image: url("/src/assets/background.svg");
   background-size: 75px;
   background-repeat: repeat;
   width: 100vw;

@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+body {
+  background-image: url("/src/assets/background.svg");
+}
+
 :root {
   --color-background: white;
   --color-background-alternate: #0c151d;
@@ -10,6 +14,10 @@
   :root {
     --color-background: #0c151d;
     --color-background-alternate: white;
+  }
+
+  body {
+    background-image: url("/src/assets/background-black.svg");
   }
 }
 
