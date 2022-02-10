@@ -74,13 +74,15 @@ nav {
   margin-top: auto;
   margin-bottom: auto;
   padding: 10px;
-  border-radius: 10px;
-  background-color: var(--color-background);
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25); 
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.25);
   & > a {
+    color: var(--color-background);
     text-align: center;
   }
   & > .spacer {
-    background-color: var(--color-background-alternate);
+    background-color: var(--color-background);
     width: 1px;
     border-radius: 10%;
   }
