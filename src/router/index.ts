@@ -9,11 +9,6 @@ const router = createRouter({
       name: "home",
       component: HomeView,
     },
-    {
-      path: "/pong",
-      name: "pong",
-      component: () => import("../views/PongView.vue"),
-    },
     /*
     {
       path: '/about',

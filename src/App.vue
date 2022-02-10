@@ -5,8 +5,8 @@ import BottomFade from "@/components/BottomFade.vue";
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
+  <div class="header">
+    <div class="nav-wrapper">
       <Logo />
       <nav>
         <RouterLink class="route" to="/">Home</RouterLink>
@@ -15,47 +15,60 @@ import BottomFade from "@/components/BottomFade.vue";
         <a href="https://discordapp.com/users/190487569362845696" class="route"
           >Discord</a
         >
-        <RouterLink class="route" to="/pong">Pong</RouterLink>
       </nav>
     </div>
-  </header>
+  </div>
 
   <RouterView />
   <BottomFade />
 </template>
 
 <style lang="scss">
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  color: lightgray;
-}
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import "@/assets/base.scss";
 body {
-  background-color: coral;
-  overflow-x: hidden;
+  background-color: var(--color-background);
+  width: 100vw;
   &::-webkit-scrollbar {
     display: none;
   }
-
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  overflow-x: hidden;
 }
 
-.wrapper {
-  margin: 5px;
+.header {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding-bottom: 20px;
+  &:after {
+    content: "";
+    z-index: -1;
+    display: block;
+    position: relative;
+    background-color: var(--color-background-alternate);
+    padding-top: 100%;
+    margin-top: -100%;
+    height: 20px;
+    width: 110%;
+    transform:rotate(1.5deg);
+  }
+}
+
+.nav-wrapper {
+  margin-bottom: 5px;
   display: flex;
+  background-color: var(--color-background-alternate);
 }
 
 nav {
   font-size: large;
   margin-left: auto;
-  padding: 2vh;
-  padding-right: 5vw;
+  margin-right: 5vw;
   display: flexbox;
-  justify-content: center;
-  text-align: center;
+  margin-top: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--color-background);
   & > * {
     text-align: center;
   }

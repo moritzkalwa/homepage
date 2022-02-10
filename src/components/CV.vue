@@ -64,7 +64,7 @@ export default defineComponent({
 }
 
 body {
-  background: #ffffff;
+  background: --var(--color-background);
 }
 
 .timeline {
@@ -80,7 +80,7 @@ body {
   content: "";
   position: absolute;
   width: 2px;
-  background: #006e51;
+  background: var(--color-accent);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -109,8 +109,8 @@ body {
   height: 16px;
   top: calc(50% - 8px);
   right: -8px;
-  background: #ffffff;
-  border: 2px solid #006e51;
+  background: var(--color-background);
+  border: 2px solid var(--color-accent);
   border-radius: 16px;
   z-index: 1;
 }
@@ -126,7 +126,7 @@ body {
   height: 2px;
   top: calc(50% - 1px);
   right: 8px;
-  background: #006e51;
+  background: var(--color-accent);
   z-index: 1;
 }
 
@@ -141,7 +141,6 @@ body {
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  color: lightgray;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
@@ -157,7 +156,7 @@ body {
 
 .container .content {
   padding: 30px 90px 30px 30px;
-  background: #006e51;
+  background: var(--color-accent);
   position: relative;
   border-radius: 0 500px 500px 0;
 }
@@ -171,14 +170,12 @@ body {
   margin: 0 0 10px 0;
   font-size: 18px;
   font-weight: normal;
-  color: lightgray;
 }
 
 .container .content p {
   margin: 0;
   font-size: 16px;
   line-height: 22px;
-  color: lightgray;
 }
 
 @media (max-width: 767.98px) {
@@ -204,7 +201,7 @@ body {
   .container.left::before,
   .container.right::before {
     left: 100px;
-    border-color: transparent #006e51 transparent transparent;
+    border-color: transparent var(--color-accent) transparent transparent;
   }
 
   .container.left .date,

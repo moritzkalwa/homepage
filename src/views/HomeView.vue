@@ -7,7 +7,7 @@ import CV from "@/components/CV.vue";
     <h1>
       Hi, I do stuff with C++, Python(Sympy, Numpy, SciPy), TS, Node and Vue.
     </h1>
-    <h2>Check out my github or play some horrible pong.</h2>
+    <h2>My passion is turning ideas into reality.</h2>
     <CV />
   </main>
 </template>

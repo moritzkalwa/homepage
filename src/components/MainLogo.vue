@@ -41,7 +41,7 @@ export default defineComponent({
     @mouseleave="onLeave"
     @click="onClick"
   >
-    <img alt="logo" src="@/assets/Logo.svg" />
+    <img alt="logo" src="@/assets/icons/Logo.svg" />
   </div>
 </template>
 
@@ -49,7 +49,7 @@ export default defineComponent({
 .logo {
   width: 50px;
   height: 50px;
-  background-color: lightgray;
+  background-color: var(--color-accent);
   border-radius: 50%;
   margin: 1vh;
   & > img {
@@ -61,7 +61,7 @@ export default defineComponent({
   }
   &.moving {
     position: relative;
-    background-color: coral;
+    background-color: var(--color-background);
     cursor: pointer;
     animation: moving 6s forwards linear;
     &:before {
@@ -70,8 +70,8 @@ export default defineComponent({
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background-image: linear-gradient(112.5, transparent 50%, lightgray 50%),
-        linear-gradient(112.5, lightgray 50%, transparent 50%);
+      background-image: linear-gradient(112.5, transparent 50%, var(--color-accent) 50%),
+        linear-gradient(112.5, var(--color-accent) 50%, transparent 50%);
       transform: rotate(72.5deg);
       animation: mouth 0.3s infinite alternate;
     }
@@ -90,8 +90,8 @@ export default defineComponent({
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background-image: linear-gradient(112.5, transparent 50%, lightgray 50%),
-        linear-gradient(112.5, lightgray 50%, transparent 50%);
+      background-image: linear-gradient(112.5, transparent 50%, var(--color-accent) 50%),
+        linear-gradient(112.5, var(--color-accent) 50%, transparent 50%);
       transform: rotate(72.5deg);
       animation: mouth 0s forwards 0.5s;
     }
@@ -127,21 +127,21 @@ export default defineComponent({
 
 @keyframes mouth {
   from {
-    background-image: linear-gradient(360deg, lightgray 0%, lightgray 100%);
+    background-image: linear-gradient(360deg, var(--color-accent) 0%, var(--color-accent) 100%);
   }
   to {
-    background-image: linear-gradient(135deg, transparent 50%, lightgray 50%),
-      linear-gradient(90deg, lightgray 50%, transparent 50%);
+    background-image: linear-gradient(135deg, transparent 50%, var(--color-accent) 50%),
+      linear-gradient(90deg, var(--color-accent) 50%, transparent 50%);
   }
 }
 
 @keyframes logo {
   from {
-    background-color: lightgray;
+    background-color: var(--color-accent);
     cursor: default;
   }
   to {
-    background-color: coral;
+    background-color: var(--color-background);
     cursor: pointer;
   }
 }

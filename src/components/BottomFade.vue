@@ -8,7 +8,7 @@ export default defineComponent({
       let documentHeight = document.body.scrollHeight;
       let currentScroll = window.scrollY + window.innerHeight;
       // When the user is [modifier]px from the bottom, fire the event.
-      let modifier = 50;
+      let modifier = 100;
       return Math.max(
         Math.min(-(currentScroll - documentHeight) / modifier, 1.0),
         0.0
@@ -36,7 +36,7 @@ export default defineComponent({
   bottom: 0;
   width: 100%;
   height: 20vh;
-  background-image: linear-gradient(transparent, coral);
+  background-image: linear-gradient(transparent, var(--color-background));
   z-index: 100;
 }
 
