@@ -64,7 +64,7 @@ export default defineComponent({
 }
 
 body {
-  background: --var(--color-background);
+  background: var(--color-background);
 }
 
 h2 {
