@@ -6,7 +6,7 @@ import ContactForm from "@/components/ContactForm.vue";
 <template>
   <main>
     <h1>
-      Hi, I do stuff with C++, Python(Sympy, Numpy, SciPy), TS, Node and Vue.
+      Hi, I do stuff with C++, Python(Sympy, Numpy), TS, Node and Vue.
     </h1>
     <h2>My passion is turning ideas into reality.</h2>
     <CV />
