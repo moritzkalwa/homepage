@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-const got = require("got")
+import got from "got"
 
 const token = process.env.TELEGRAM_TOKEN
 const chat_id = process.env.TELEGRAM_TO

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 
-const { send } = require("./deploy-succeeded")
+import { send } from "./deploy-succeeded"
 
 const deployError = ({ error_message }) => `🛑 deploy error:\n${error_message}`
 
