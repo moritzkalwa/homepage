@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-import got from "got"
+const got = require("got")
 
 const token = process.env.TELEGRAM_TOKEN
 const chat_id = process.env.TELEGRAM_TO
@@ -33,7 +33,7 @@ const deployMessage = payload => {
   )
 }
 
-const send = async text => {
+export const send = async text => {
   const url = new URL(telegram("sendMessage"))
 
   const searchParams = {
