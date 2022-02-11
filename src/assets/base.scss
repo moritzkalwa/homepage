@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 body {
-  background-image: url("/background.svg");
+  background-image: url("/src/assets/background.svg");
 }
 
 :root {
@@ -17,7 +17,7 @@ body {
   }
 
   body {
-    background-image: url("/background-black.svg");
+    background-image: url("/src/assets/background-black.svg");
   }
 }
 
