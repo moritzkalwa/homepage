@@ -41,7 +41,7 @@ export default defineComponent({
     @mouseleave="onLeave"
     @click="onClick"
   >
-    <img alt="logo" src="@/assets/icons/Logo.svg" />
+    <img alt="logo" src="/Logo.svg" />
   </div>
 </template>
 
