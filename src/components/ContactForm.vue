@@ -87,7 +87,7 @@ export default defineComponent({
       <section v-if="success === null" class="contact-form-wrapper">
         <h1 >contact me</h1>
         <p>
-          use the form below to get in touch and i'll respons as soon as possible.
+          use the form below to get in touch and i'll respond as soon as possible.
         </p>
 
         <form :onsubmit="submit" class="contact-form">
