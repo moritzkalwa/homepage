@@ -71,7 +71,7 @@ body {
 nav {
   display: flex;
   flex-wrap: wrap;
-  font-size: larger;
+  font-size: min(3vw, 1.5rem);
   margin-left: auto;
   margin-right: 5vw;
   margin-top: auto;

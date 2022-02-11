@@ -15,6 +15,7 @@ dist-ssr
 
 /cypress/videos/
 /cypress/screenshots/
+/.netlify/
 
 # Editor directories and files
 .vscode/*
