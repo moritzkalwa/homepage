@@ -1,24 +1,13 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  components: {},
-  setup() {
-    return {};
-  },
-});
-</script>
-
 <template>
   <div class="timeline">
     <div class="container left">
       <div class="date" style="right: -250px">October 2017 - February 2019</div>
       <div class="content">
-        <h2 class="desktop">Heinrich-Heine-Universität</h2><h2 class="mobile">Heinrich-Heine-Universität: <br>October 2017 - February 2019</h2>
-        <p>
-          In October of 2017 I started studying phsysics part time at
-          Heinrich-Heine-Universität.
-        </p>
+        <h2 class="desktop">Heinrich-Heine-Universität</h2>
+        <h2 class="mobile">
+          Heinrich-Heine-Universität: <br />October 2017 - February 2019
+        </h2>
+        <p>Studying phsysics part time at Heinrich-Heine-Universität.</p>
       </div>
     </div>
     <div class="container right">
@@ -32,7 +21,7 @@ export default defineComponent({
       <div class="date" style="right: -200px">October 2020 - present</div>
       <div class="content">
         <h2 class="desktop">RWTH-Aachen</h2><h2 class="mobile">RWTH-Aachen: <br>October 2020 - present</h2>
-        <p>I started studying physics full time at RWTH-Aachen.</p>
+        <p>Studying physics at RWTH-Aachen.</p>
       </div>
     </div>
     <div class="container right">
@@ -40,7 +29,7 @@ export default defineComponent({
       <div class="content">
         <h2 class="desktop">Vue</h2><h2 class="mobile">Vue: <br>December 2021 - present</h2>
         <p> 
-          Started using Vue and helping with
+          Started using Vue and development work on
           <a href="https://staging.resync.tv/">resync</a>. Shoutouts
           <a href="https://vaaski.dev/">@vaaski</a>.
         </p>
@@ -50,7 +39,7 @@ export default defineComponent({
       <div class="date" style="right: -210px">February 2022 - present</div>
       <div class="content">
         <h2 class="desktop">Nuntium</h2><h2 class="mobile">Nuntium: <br>February 2022 - present</h2>
-        <p>Started work on <a href="https://nuntium.moritzkalwa.dev/">Nuntium</a>, a blockchain based news and content site.</p>
+        <p>Development of <a href="https://nuntium.moritzkalwa.dev/">Nuntium</a>, a blockchain based news and content site.</p>
       </div>
     </div>
   </div>

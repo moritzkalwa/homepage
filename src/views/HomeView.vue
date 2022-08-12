@@ -8,7 +8,7 @@ import ContactForm from "@/components/ContactForm.vue";
     <h1>
       Hi, I do stuff with C++, Python(Sympy, Numpy), TS, Node and Vue.
     </h1>
-    <h2>My passion is turning ideas into reality.</h2>
+    <h2>Don't stop dreaming.</h2>
     <CV />
     <ContactForm id="contact" />
   </main>
